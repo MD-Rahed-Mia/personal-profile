@@ -1,0 +1,852 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+.navbar {
+  width: 100%;
+  background-color: rgb(10, 90, 90);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 7%;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo {
+  width: 16.66%;
+}
+
+.navbar-menu {
+  width: calc(8.33% * 6);
+}
+
+.header-name {
+  width: calc(8.33% * 4);
+}
+
+.header-name h1 {
+  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  letter-spacing: 5px;
+  width: 100%;
+}
+
+.navbar-menu a {
+  width: 100%;
+  display: inline;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  background-color: lightslategray;
+  margin: 6px;
+  border-radius: 5px;
+}
+
+.profile {
+  width: 100%;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.profile-heading {
+  text-align: center;
+  padding: 1% 5%;
+}
+
+.profile-heading h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.profile-heading p {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-top: 5%;
+}
+
+.weather-icon {
+  font-size: 5rem;
+  color: gold;
+  margin: 10px;
+}
+
+.weather-icon:hover {
+  animation-name: rotaion-sun;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 0ms;
+  animation-duration: 100ms;
+}
+
+@keyframes rotaion-sun {
+  0% {
+    transform: rotate(50deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.about-me {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgb(10, 90, 90);
+  padding: 2% 5%;
+}
+
+.about-me-header h1 {
+  color: white;
+  font-size: 3rem;
+  padding: 40px 0 10px 0;
+}
+
+.dotted-hr {
+  border: dotted 5px white;
+  border-bottom: none;
+  margin: 20px auto;
+  width: 100px;
+}
+
+.about-me-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about-me-qoute {
+  font-size: 1rem;
+  color: white;
+  margin: 50px auto;
+}
+
+.details-para {
+  font-size: 30px;
+  color: white;
+  margin: 10px auto;
+}
+
+.about-me-section hr {
+  border: 2px solid white;
+  border-bottom: none;
+}
+
+.download-cv {
+  font-size: 30px;
+  margin: 50px auto;
+  width: 300px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(54, 57, 59);
+  color: white;
+}
+
+/* Education section start here */
+.experience-center {
+  padding: 2%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+}
+
+.education-card {
+  background-color: rgba(122, 117, 117, 0.801);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 3px 4px black;
+  margin: 20px auto;
+}
+.card-book {
+  font-size: 70px;
+  color: gold;
+  margin: 10px;
+}
+.education-card h1 {
+  font-size: 2.6rem;
+  color: white;
+  font-weight: 700;
+}
+.education-card > div > p:nth-child(1) {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.visit-youtube {
+  font-size: 30px;
+  color: white;
+  margin: 20px;
+}
+/* skill center start here */
+.skill-bar {
+  margin: 50px auto;
+  width: 90%;
+  background-color: gray;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 49px 0px rgba(0, 0, 0, 0.75);
+}
+.skill-bar h1 {
+  text-align: center;
+  color: white;
+  font-weight: 1000;
+}
+.skill-bar p {
+  position: relative;
+  color: white;
+  margin: 30px auto;
+}
+.skill-bar p::before {
+  background-color: rgb(63, 212, 218);
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: " ";
+  border-radius: 100px;
+}
+
+.skill-bar p::after {
+  background-color: green;
+  width: 0;
+  height: 15px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: " ";
+  border-radius: 100px;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.skill-bar p.html::after {
+  animation-name: html;
+}
+@keyframes html {
+  to {
+    width: 70%;
+  }
+}
+
+.skill-bar p.js::after {
+  animation-name: js;
+}
+@keyframes js {
+  to {
+    width: 60%;
+  }
+}
+
+.skill-bar p.css::after {
+  animation-name: css;
+}
+@keyframes css {
+  to {
+    width: 80%;
+  }
+}
+
+.skill-bar p.bt::after {
+  animation-name: bt;
+}
+@keyframes bt {
+  to {
+    width: 30%;
+  }
+}
+
+.skill-bar p.py::after {
+  animation-name: py;
+}
+
+@keyframes py {
+  to {
+    width: 45%;
+  }
+}
+.skill-bar p.rjs::after {
+  animation-name: rjs;
+}
+
+@keyframes rjs {
+  to {
+    width: 50%;
+  }
+}
+
+/* Education section end here */
+/* 
+achivement and contact goes here */
+
+.achivement-container {
+  background-color: rgb(10, 90, 90);
+  text-align: center;
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.achivment {
+  width: 70%;
+}
+.achivement-heading {
+  color: white;
+  margin-top: 20px;
+}
+.achivment ol li {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.contacts .name,
+.email {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: aqua;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  outline: none;
+}
+.contacts .name::placeholder,
+.email::placeholder {
+  color: white;
+}
+.message-box {
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: aqua;
+  outline: none;
+}
+.message-box::placeholder {
+  color: white;
+}
+.contact-btn {
+  font-size: 30px;
+  background-color: gray;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* 
+social media start here * */
+.social-media {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.social-media h1 {
+  color: rgb(10, 90, 90);
+  font-size: 2.5rem;
+  margin: 10px auto;
+}
+.social-media i {
+  font-size: 2.5rem;
+  padding: 10px;
+  margin: 5px;
+  color: rgb(10, 90, 90);
+}
+
+/* 
+social media end here */
+
+/* 
+achivement and contact ends here */
+
+/* 
+footer navmenu start here */
+footer {
+  width: 100%;
+  padding: 2%;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer-navmenu {
+  
+}
+.footer-navmenu a {
+  padding: 2%;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.footer-navmenu a:hover {
+  color: gray;
+}
+.footer-desc{
+  
+}
+.footer-desc a {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+/* 
+footer navmenu end here */
+
+/* for laptop  */
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    width: 100%;
+    background-color: rgb(10, 90, 90);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 7%;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo {
+    width: 8.33%;
+  }
+
+  .navbar-menu {
+    width: calc(8.33% * 7);
+  }
+
+  .header-name {
+    width: calc(8.33% * 4);
+    text-align: center;
+  }
+
+  .header-name h1 {
+    font-size: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    letter-spacing: 0px;
+    width: 100%;
+  }
+
+  .navbar-menu a {
+    width: 100%;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    background-color: lightslategray;
+    margin: 6px;
+    border-radius: 5px;
+  }
+}
+
+/* for mobile design  */
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    width: 100%;
+    padding: 2% 4%;
+    background-color: rgb(10, 90, 90);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .header-name {
+    width: 100%;
+  }
+
+  .navbar-menu a {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    background-color: lightslategray;
+    margin: 6px;
+    border-radius: 5px;
+  }
+
+  .about-me {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(10, 90, 90);
+    padding: 2% 5%;
+  }
+
+  .about-me-header h1 {
+    color: white;
+    font-size: 3rem;
+    padding: 40px 0 10px 0;
+  }
+
+  .dotted-hr {
+    border: dotted 5px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 100px;
+  }
+
+  .about-me-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .about-me-qoute {
+    font-size: 1rem;
+    color: white;
+    margin: 50px auto;
+  }
+
+  .details-para {
+    font-size: 30px;
+    color: white;
+    margin: 10px auto;
+  }
+
+  .about-me-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me-section hr {
+    border: 2px solid white;
+    border-bottom: none;
+  }
+
+  .download-cv {
+    font-size: 30px;
+    margin: 15px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(54, 57, 59);
+    color: white;
+  }
+
+  /* Education section start here */
+  .experience-center {
+    padding: 2%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education-card {
+    background-color: rgba(122, 117, 117, 0.801);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 3px 4px black;
+    margin: 20px auto;
+    box-shadow: 2px 3px 49px 0px rgba(0, 0, 0, 0.75);
+  }
+  .card-book {
+    font-size: 70px;
+    color: gold;
+    margin: 10px;
+  }
+  .education-card h1 {
+    font-size: 2.6rem;
+    color: white;
+    font-weight: 700;
+  }
+  .education-card > div > p:nth-child(1) {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .visit-youtube {
+    font-size: 30px;
+    color: white;
+    margin: 20px;
+  }
+
+  /* Education section end here */
+  /* skill center start here */
+  .skill-bar {
+    margin: 50px auto;
+    width: 90%;
+    background-color: gray;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 49px 0px rgba(0, 0, 0, 0.75);
+  }
+  .skill-bar h1 {
+    text-align: center;
+    color: white;
+    font-weight: 1000;
+  }
+  .skill-bar p {
+    position: relative;
+    color: white;
+    margin: 30px auto;
+  }
+  .skill-bar p::before {
+    background-color: rgb(63, 212, 218);
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: " ";
+    border-radius: 100px;
+  }
+
+  .skill-bar p::after {
+    background-color: green;
+    width: 0;
+    height: 15px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: " ";
+    border-radius: 100px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .skill-bar p.html::after {
+    animation-name: html;
+  }
+  @keyframes html {
+    to {
+      width: 70%;
+    }
+  }
+
+  .skill-bar p.js::after {
+    animation-name: js;
+  }
+  @keyframes js {
+    to {
+      width: 60%;
+    }
+  }
+
+  .skill-bar p.css::after {
+    animation-name: css;
+  }
+  @keyframes css {
+    to {
+      width: 80%;
+    }
+  }
+
+  .skill-bar p.bt::after {
+    animation-name: bt;
+  }
+  @keyframes bt {
+    to {
+      width: 30%;
+    }
+  }
+
+  .skill-bar p.py::after {
+    animation-name: py;
+  }
+
+  @keyframes py {
+    to {
+      width: 45%;
+    }
+  }
+  .skill-bar p.rjs::after {
+    animation-name: rjs;
+  }
+
+  @keyframes rjs {
+    to {
+      width: 50%;
+    }
+  }
+
+  /* skill center end here */
+  /* 
+achivement and contact goes here */
+
+  .achivement-container {
+    background-color: rgb(10, 90, 90);
+    text-align: center;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .achivment {
+    width: 100%;
+  }
+  .achivement-heading {
+    color: white;
+    margin-top: 20px;
+  }
+  .achivment ol li {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    list-style-position: inside;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contacts .name,
+  .email {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: aqua;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+  }
+  .contacts .name::placeholder,
+  .email::placeholder {
+    color: white;
+  }
+  .message-box {
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: aqua;
+    outline: none;
+  }
+  .message-box::placeholder {
+    color: white;
+  }
+  .contact-btn {
+    font-size: 30px;
+    background-color: gray;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  /* 
+achivement and contact ends here */
+  /* 
+social media start here */
+  .social-media {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .social-media h1 {
+    color: rgb(10, 90, 90);
+    font-size: 2.5rem;
+    margin: 10px auto;
+  }
+  .social-media i {
+    font-size: 2.5rem;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(10, 90, 90);
+  }
+
+  /* 
+social media end here */
+}
+/* 
+footer navmenu start here */
+footer {
+  width: 100%;
+  padding: 2%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-navmenu {
+  padding: 2%;
+}
+.footer-navmenu a {
+  padding: 2%;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer-navmenu a:hover {
+  color: gray;
+}
+.footer-desc a {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+  margin-top: 50px;
+}
+/* 
+footer navmenu end here */
+
+/* end mobile design navbar here */
